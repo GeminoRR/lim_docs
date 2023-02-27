@@ -1,0 +1,92 @@
+/* FONT */
+@font-face {
+    font-family: 'consolas';
+    src: url('../fonts/consolas.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+/* VARIABLES */
+:root{
+	--cBackground: #1F2125;
+	--cBackground2: #292B2F;
+	--cBorder: #353638;
+	--cFont: #FFFFFF;
+	--cFont2: #AAADB6;
+	--navbarWidth: 320px;
+	--headerHeight: 80px;
+}
+
+/* GENERAL */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+/* TEXT */
+.text-green-gradient{
+	background: -webkit-linear-gradient(left, #186B3A, #27AD5F);
+	background-clip: text;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+/* BUTTON */
+button{
+	outline: none;
+	border: none;
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-track {
+	background: var(--cBackground2);
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--cBorder);
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--cFont2);
+}
+
+/* FOOTER */
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 25px 20px;
+	box-sizing: border-box;
+	background-color: #186B3A;
+}
+footer p{
+	color: white;
+	font-size: 18px;
+}
+@media (max-width:720px) {
+	footer{
+		text-align: center;
+		flex-direction: column;
+		gap: 10px;
+	}
+}

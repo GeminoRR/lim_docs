@@ -1,0 +1,35 @@
+<h1>Hello World - Your first program</h1>
+<p>We are going to create a program named "Hello World". It is a program that displays this same message to the terminal. Nothing interesting I agree, but it is useful to understand the general concept of lim.</p>
+
+<h2>Set up the environment</h2>
+<p>Start by creating a new folder in which we will work. This step is not mandatory but strongly recommended.</p>
+<p>Create a file named "hello_world.lim". The ".lim" extension is very important.</p>
+
+<h2>Programming</h2>
+<p>In the "hello_world.lim" file write the following code.</p>
+<code><pre><span class="code-violet">func</span> <span class="code-red">main</span>
+    <span class="code-blue">puts</span>(<span class="code-green">"Hello, World!"</span>)</pre></code>
+<div class="danger"><p>The tabulation is important, the second line must be separated with a tabulation and not spaces.</p></div>
+<p>Here we create a "main" function. A function is like a box in which we put code. You can call this box from almost anywhere to execute the code it contains. The "main" function is special because it is the one that is called at the very beginning of the execution of the program.</p>
+<p>The following line belongs to the function because it is indented at least 1 time more than the line which declares the function (1st line). This line calls the "puts" function with the "Hello, World!" argument. The puts function writes the indicate argument to the terminal. Note that the text is in quotes to avoid any confusion with the keywords of the code.</p>
+
+<h2>Compilation</h2>
+<p>Compilation is a step that not all programming languages have. This step can be seen as a translation between the code you wrote and a binary file executable by your computer. This step is obviously automated by lim.</p>
+<p>Open a terminal in the folder that contains your "hello_world.lim" file.</p>
+<div class="danger"><p>If you don't know how to use a terminal, we strongly advise you to watch an introductory video to this essential developer tool.</p></div>
+<p>Run the following command</p>
+<code><pre>lim hello_world.lim hello_world</pre></code>
+<p>This command will then create a new file in your folder, this is the executable. This is independent of your code file, so you can take it wherever you want, it would still be functional.</p>
+<p>Lim is used like this:</p>
+<code><pre>lim &lt;your_code_file&gt; [executable_name]</pre></code>
+
+<h2>Execution</h2>
+<p>Now let's run our program in the terminal.</p>
+<h3>For windows</h3>
+<code><pre>hello_world</pre></code>
+<h3>For Linux</h3>
+<code><pre>./hello_world</pre></code>
+<h3>Output</h3>
+<code><pre>Hello, World!
+
+</pre></code>

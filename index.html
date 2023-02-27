@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lim Documentation</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="shortcut icon" href="images/Logo_white.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- COLOR MODE TRANSITION -->
+    <div class="color-mode-transition" id="color_mode_transition" hidden></div>
+
+    <!-- SEARHBAR -->
+    <div class="searchbar" id="searchbar">
+        <input type="text" name="Search" id="searchbar_input" placeholder="Search something...">
+        <p id="searchbar_btn">🚀</p>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-logo">
+            <img src="images/Logo_white.png" alt="Lim logo" id="app_logo">
+            <p>Lim</p>
+        </div>
+        <div class="header-links" id="header_links">
+        </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="body" id="body" style="display: none;">
+
+        <!-- NAVIGATION -->
+        <nav>
+
+            <p class="nav-title" id="nav_title">STD - Standard</p>
+            <div class="nav-content" id="nav_content">
+            </div>
+
+        </nav>
+
+        <!-- CONTENT -->
+        <div class="content" id="content"></div>
+
+    </div>
+
+    <!-- LANDING PAGE -->
+    <div class="landing-page" id="landing_page">
+        <h1>Lim <span class="text-green-gradient">Documentation</span></h1>
+        <h2>The robustness of a strictly typed language, with the simplicity of a dynamic one</h2>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>
