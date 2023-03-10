@@ -109,7 +109,46 @@ nav{
 .dvd-play{
     display: inline-block;
     position: absolute;
-/*    transform: translate(calc(var(--navbarWidth) + 20px), calc(var(--headerHeight) + 20px));*/
+    transform: translate(calc(var(--navbarWidth) + 20px), calc(var(--headerHeight) + 20px));
+    animation: dvd-play-bordel 5s linear infinite;
+}
+@keyframes dvd-play-bordel {
+    0%{
+        color: white;
+        transform: rotate(0deg) scale(1);
+    }
+    10%{
+        color: red;
+    }
+    20%{
+        color: pink;
+    }
+    30%{
+        color: green;
+    }
+    40%{
+        color: blue;
+    }
+    50%{
+        color: cyan;
+        transform: rotate(5000deg) scale(3);
+    }
+    60%{
+        color: magenta;
+    }
+    70%{
+        color: purple;
+    }
+    80%{
+        color: orange;
+    }
+    90%{
+        color: yellow;
+    }
+    100%{
+        color: white;
+        transform: rotate(10000deg) scale(1);
+    }
 }
 
 /* TYPEICON */

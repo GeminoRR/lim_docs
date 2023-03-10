@@ -53,6 +53,11 @@ const data = [
                 filename:"std/list.html"
             },
             {
+                name:"linkedlist",
+                type:"class",
+                filename:"std/linkedlist.html"
+            },
+            {
                 name:"map",
                 type:"class",
                 filename:"std/map.html"
@@ -171,25 +176,27 @@ function loadContent(filename){
                     content.innerHTML = '';
                     let dvd = document.createElement('h1');
                     dvd.textContent = "Page not found";
-                    dvd.className = "dvd-play";
+                    dvd.style.cursor = "pointer";
                     content.appendChild(dvd);
                     
                     dvd.addEventListener('click', ()=>{
                         
+                        dvd.className = "dvd-play";
+
                         let top = 0, left = 0;
-                        let velocityX = 2, velocityY = 2;
-    
+                        let velocityX = 3, velocityY = 3;
+
                         itervalID = setInterval(()=>{
+
                             dvd.style.top = top.toString() + "px";
                             dvd.style.left = left.toString() + "px";
                             left += velocityX;
                             top += velocityY;
-                            let canva = content;
-                            canva = body
-                            if (top + dvd.offsetHeight >= canva.offsetHeight){
+
+                            if (top >= document.body.offsetHeight - dvd.offsetHeight - 20){
                                 velocityY = -velocityY;
                             }
-                            if (left + dvd.offsetWidth >= canva.offsetWidth){
+                            if (left >= document.body.offsetWidth - dvd.offsetWidth - 30){
                                 velocityX = -velocityX;
                             }
                             if (top <= 0){
