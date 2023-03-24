@@ -48,6 +48,11 @@ const data = [
                 filename:"std/bool.html"
             },
             {
+                name:"any",
+                type:"class",
+                filename:"std/any.html"
+            },
+            {
                 name:"list",
                 type:"class",
                 filename:"std/list.html"
@@ -61,6 +66,20 @@ const data = [
                 name:"map",
                 type:"class",
                 filename:"std/map.html"
+            }
+        ]
+    },
+    {
+        name: "window",
+        content: [
+            {
+                name:"Basics",
+                filename:"window/basics.html"
+            },
+            {
+                name:"window",
+                type:"class",
+                filename:"window/window.html"
             }
         ]
     }

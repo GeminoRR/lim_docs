@@ -38,6 +38,17 @@
     margin-right: 10px;
 }
 
+/* ARG TYPE */
+.arg-type{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #ad848d;
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
 /* CODE */
 code{
 	font-family:'consolas';
